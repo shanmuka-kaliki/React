@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understand Basic React</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NOTE: Any thing you kept inside react manipulating div will replaces by react content-->
+    <div id="root">React will replace this text</div>
+    <!-- These roots are just for practice in react we render everything in one root-->
+    <div id="root1">React will replace this text</div>
+    <div id="root2">React will replace this text</div>
+    <div id="root3">React will replace this text</div>
+    <!-- NOTE: REACT CDN links should be on top of js calling script tag -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="./App.js"></script>
+  </body>
+</html>

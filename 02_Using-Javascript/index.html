@@ -1,0 +1,28 @@
+<!-- 
+ Writing the same program using Javascript
+ 1. Write a div with id root
+ 2. Within Script Tags write javascript code.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Javascript</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const heading = document.createElement("h1");
+        heading.textContent = "Hello World using Javascript";
+        
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script>
+    <!-- 
+        - You can see "h1"tag in DOM which is created inside root.
+        - Inside "h1" tag, you can see "Hello World using Javascript".
+        - Browsers only understand HTML, CSS and JavaScript. 
+    -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using React CDN</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- CDN Links-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- 
+        - createElement using React
+            - use React.createElement
+            - It takes three arguments - elements, attributes, children (what need to be inside that 
+              tag we are creating that can be text or another hTML element)
+        - create a reference to root using ReactDOM.createRoot
+        - render created element inside the root using render() method. 
+    -->
+    <script>
+        const heading = React.createElement("h1", {}, "Hello World with React");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+    </script>
+</body>
+</html>

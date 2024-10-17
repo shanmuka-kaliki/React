@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React CDN</title>
+  </head>
+  <body>
+    <div class="root"></div>
+    <!-- two CDN Links-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- 
+        - Because of these CDN's,react is converted to javascript that browsers will undersatand react.
+        - If you pen src links in browser, it is just javascript which convert our react code to javascript.
+        - Type "React" in console and you will get react object because of our CDN's.
+        - Two CDN links are for running react in different environments like browser(beacuse of react-dom link), server etc
+    -->
+    <!--
+    -THINGS TO KNOW ABOUT REACT
+        - React is a library because it can work independently in small areas of a app like just in navbar, footer or any part of a app.
+        - React is giving helper methods to fasten your development process.
+        - React can work in your existing JS App as well
+        - Just by using CDN links you can use react in small portions of our APP.
+    -->
+  </body>
+</html>
